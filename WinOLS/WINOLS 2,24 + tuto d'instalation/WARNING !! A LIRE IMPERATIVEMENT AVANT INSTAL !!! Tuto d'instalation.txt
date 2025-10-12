@@ -1,0 +1,41 @@
+WARNING !!
+
+Bien suivre à la lettre ce tuto d'instalation 
+
+1. Instaler (SETUP)
+
+
+2. Mettre le fichier [EVC_key.dll] et le fichier [EVClicenceMOD.dll] ainsi que le fichier [loader_ols_32bit] 
+
+dans C:Program files\EVC 
+
+(attention à ne pas les mettres dans le dossier WINOLS mais bien dans EVC !!!!) 
+
+une fois les fichiers mis ne rien toucher pour l'instant !!!!
+
+
+3. Ensuite instaler [WinOLS_Testversion] à la fin de l'instalation le lancer en faisant tout le 
+temps suivant et ok sans rien modifier jusqu'à ouverture de la version démo puis une fois winols ouvert la refermer quittant 
+
+
+4. Retourné dans C:Program files\EVC selectionner [loader_ols_32bit] et cliquer dessus, une fenètre va souvrir
+en affichant un message "Restart app !" 
+
+
+5. Menu démarré / puis panneau de configuration / ajouter ou supprimer des programmes / enssuite désinstaller uniquement le programme [WinOLS 2.14.03]
+
+
+6. Retourné dans C:Program files\EVC selectionner [loader_ols_32bit] et cliquer droit sur la souris selectionner envoyer-vers (bureau crée un racourci) 
+
+
+7. Ensuite sur le bureau suprimmer l'icone WinOLS (Veillez à faire attention à ne pas lancer le programme !!!!)
+et ce servir uniquement de [loader_ols_32bit] pour lancer winols !!!
+
+
+8. Cliquer sur [loader_ols_32bit] sur le bureau attendre que winols s'ouvre, puis le refermer !!
+
+
+9. Cliquer sur [loader_ols_32bit] sur le bureau si pendant le chargement de winols avant l'ouvert vous voyez inscrit
+en dessous de la barre de chargement inscrit "REGISTERED TO CAR-LINK" c'est que c'est bon !!
+
+Voilà maintenant faites en bonne usage ;)  

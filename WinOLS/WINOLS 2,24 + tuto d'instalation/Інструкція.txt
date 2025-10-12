@@ -1,0 +1,26 @@
+Чтоб каждый раз производить "чистую установку" надо почистить реестр, и удалить все файлы с диска C:\ которые так или иначе связаны с WinOLS, в которых он может хранить настройки.
+Для этого используем батничек, или руками чистим по указаным путям:
+Имя пользователя меняем на своё, батничек запускаем от имени администратора
+
+rmdir /s /q "C:\Program Files\EVC"
+rmdir /s /q "C:\ProgramData\Evc"
+rmdir /s /q "C:\Users\Alexander\Documents\Evc"
+rmdir /s /q "C:\Users\Alexander\AppData\Local\VirtualStore\Program Files\Evc"
+rmdir /s /q "C:\Users\Alexander\AppData\Local\VirtualStore\ProgramData\Evc"
+reg delete HKEY_CURRENT_USER\Software\EVC /f
+reg delete "HKEY_CURRENT_USER\Software\Local AppWizard-Generated Applications\WinOLS" /f
+pause
+
+Возможно список не полный, но мне помогало, если вдруг что — дописывайте в комментариях.
+
+Но каждый раз новая установка не помогала. Погуглив форумы, много кто писал, что сначала надо установить Demo версию, а поверх неё устанавливать кряк. Но вот демо версию винолса ниже 2.24 найти было трудно, а другие не работали.
+В общем кое как нашёл рабочий вариант, и так:
+— Создаём папку куда будем качать архив, и добавляем его в исключение антивируса
+— Создаём папку C:\Program Files\EVC, и добавляем её в исключения
+— Создаём папку C:\Program Files (x86)\EVC, и добавляем её в исключения
+— Качаем архив по ссылкам ниже(возможно придётся открыть во вкладке "инкогнито", или отключить AdBlock):
+— Устанавливаем WinOLS_Testversion.EXE, при этом важно поменять путь на C:\Program Files\EVC\WinOLS. НЕ запускаем программу в конце установки.
+— Дальше запускаем Setup.exe. Если винда 64-битная, оно установит крякнутый WinOLS в Program Files(x86)
+— Копируем оттуда всю папку EVC, и вставляем c заменой в простую Program Files
+— Далее копируем сам кряк(EVC_key.dll, EVClicenseMOD.dll, loader_ols_32bit.exe) в папку C:\Program Files\EVC, именно EVC, а не в WinOLS
+— запускаем всегда программу через loader_ols_32bit.exe
